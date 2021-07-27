@@ -1,0 +1,117 @@
+*{
+    margin:10px;
+    padding: 10px;
+   box-sizing: border-box; 
+}
+.padre{
+    display: flex;
+    flex-flow:column nowrap;
+
+
+}
+
+header{
+    background: rgb(146, 145, 145);
+    display:flex;
+    flex-flow:column nowrap;
+
+}
+    .menu{
+        background:#FAEBE0 ;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100px;
+        align-items: center;
+    }
+        .logo{
+            background: #C9E4C5 ;
+            flex: 1 1 auto;
+            height: 30px;
+        }
+        .nav{
+            background: #C9E4C5;
+            flex: 5 1 auto;
+            height: 30px;
+        }
+        .social{
+            background: #C9E4C5;
+            flex: 1 1 auto;
+            height: 30px;
+        }
+    .texto-principal{
+        background: #B5CDA3 ;
+    }
+        h1{
+            background: #C1AC95 ;
+        }
+.section{
+    background: rgb(146, 145, 145);
+    display: flex;
+}
+    .articulos{
+        background: #F8B195;
+        flex: 2 1 auto;
+        display:flex;
+        flex-flow: row wrap;
+    }
+        .article{
+            background: #f67280; 
+            flex: 1 1 40%;
+        }
+        .navegacion{
+            background:#C06C84 ;
+            flex: 1 1 100%;
+        }
+    .aside{
+        background: #6C5B7B ;
+        flex: 1 1 auto;
+    }
+        .publicidad{
+            background: #6da065;
+        }
+
+.footer{
+    background: rgb(146, 145, 145);
+    display: flex;
+    justify-content: center;
+}
+    .pie{
+        background:#FAEBE0 ;
+        width: 300px;
+    }
+
+@media all and (max-width: 1000px){
+    .section{
+        flex-direction: column;
+        background: yellow;
+    }
+    
+    .aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+       
+}
+
+@media all and (max-width: 600px ){
+    .articulos{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+            .logo{
+            width: 100%;
+            }
+            .nav{
+            width: 100%;
+            }
+            .social{
+            width: 100%;
+            }
+    .aside{
+        flex-direction: column;
+    }
+}
